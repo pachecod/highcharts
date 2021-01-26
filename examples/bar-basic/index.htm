@@ -3,11 +3,11 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Highcharts Example</title>
+		<title>Testing Out Basic Bar Chart</title>
 
 		<style type="text/css">
 .highcharts-figure, .highcharts-data-table table {
-    min-width: 310px; 
+    min-width: 310px;
     max-width: 800px;
     margin: 1em auto;
 }
@@ -55,9 +55,7 @@
 <figure class="highcharts-figure">
     <div id="container"></div>
     <p class="highcharts-description">
-        Bar chart showing horizontal columns. This chart type is often
-        beneficial for smaller screens, as the user can scroll through the data
-        vertically, and axis labels are easy to read.
+        This is a basic bar chart.
     </p>
 </figure>
 
@@ -69,13 +67,13 @@ Highcharts.chart('container', {
         type: 'bar'
     },
     title: {
-        text: 'Historic World Population by Region'
+        text: 'A title.'
     },
     subtitle: {
         text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
     },
     xAxis: {
-        categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+        categories: ['Apples', 'Bananas', 'Oranges', 'Grapes', 'Kiwis'],
         title: {
             text: null
         }
@@ -83,7 +81,7 @@ Highcharts.chart('container', {
     yAxis: {
         min: 0,
         title: {
-            text: 'Population (millions)',
+            text: 'Number of fruits',
             align: 'high'
         },
         labels: {
@@ -91,7 +89,7 @@ Highcharts.chart('container', {
         }
     },
     tooltip: {
-        valueSuffix: ' millions'
+        valueSuffix: ' pieces'
     },
     plotOptions: {
         bar: {
@@ -116,17 +114,17 @@ Highcharts.chart('container', {
         enabled: false
     },
     series: [{
-        name: 'Year 1800',
-        data: [107, 31, 635, 203, 2]
+        name: 'Tops',
+        data: [10, 31, 6335, 203, 2]
     }, {
-        name: 'Year 1900',
-        data: [133, 156, 947, 408, 6]
+        name: 'Wegmans',
+        data: [133, 1356, 47, 418, 6]
     }, {
-        name: 'Year 2000',
-        data: [814, 841, 3714, 727, 31]
+        name: 'Price Choper',
+        data: [814, 841, 714, 727, 31]
     }, {
-        name: 'Year 2016',
-        data: [1216, 1001, 4436, 738, 40]
+        name: 'Farmers Market',
+        data: [216, 100, 4436, 738, 40]
     }]
 });
 		</script>
